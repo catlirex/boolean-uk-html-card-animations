@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  justify-items: center;
+  margin-top: 50px;
+}
+
+.card {
+  width: 300px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    22deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(16, 16, 84, 1) 36%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  display: grid;
+  grid-template-rows: 50px 270px 200px;
+
+  border-radius: 10px;
+}
+
+/* HERDER */
+header {
+  display: grid;
+  list-style: none;
+  grid-template-columns: 180px 30px 30px;
+  grid-gap: 10px;
+
+  padding: 10px 15px;
+}
+
+img.menu-icon {
+  width: 20px;
+  align-self: center;
+}
+img.heart-icon,
+img.share-icon {
+  width: 20px;
+  justify-self: right;
+  align-self: center;
+}
+
+/* INFO */
+
+.info {
+  display: grid;
+  color: rgb(218, 218, 218);
+  justify-items: center;
+  grid-template-rows: 120px 40px 30px 30px 50px;
+}
+
+.profile-picture {
+  object-fit: cover;
+  width: 100px;
+  height: 100px;
+
+  border-radius: 50%;
+  justify-self: center;
+}
+
+.info h2 {
+  font-size: 1rem;
+}
+
+.info h3 {
+  font-size: 0.9rem;
+}
+
+.hire-me-button {
+  text-decoration: none;
+  color: white;
+  width: 150px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+
+  background: rgb(81, 75, 196);
+  background: linear-gradient(
+    103deg,
+    rgba(81, 75, 196, 1) 0%,
+    rgba(23, 113, 116, 1) 0%,
+    rgba(18, 247, 212, 1) 100%
+  );
+
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+
+  box-shadow: 3px 3px 5px 1px rgba(20, 20, 90, 0.548);
+}
+
+/* SOCIAL INFO */
+.social-info {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 25px;
+  padding: 10px 30px;
+  justify-content: center;
+}
+
+.social {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  color: white;
+  grid-template-rows: 80px 30px 30px;
+}
+
+.icon-container {
+  width: 50px;
+  height: 50px;
+
+  background: rgb(81, 75, 196);
+  background: linear-gradient(
+    45deg,
+    rgba(81, 75, 196, 1) 0%,
+    rgba(57, 80, 150, 1) 0%,
+    rgba(17, 186, 151, 0.7301295518207283) 100%
+  );
+
+  border-radius: 50%;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.social-icon {
+  height: 30px;
+  justify-items: center;
+}
+
+.social h2 {
+  font-size: 1.2rem;
+}
+.social p {
+  font-size: 0.8rem;
+}
