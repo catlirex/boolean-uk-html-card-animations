@@ -23,6 +23,7 @@ body {
   grid-template-rows: 50px 270px 200px;
 
   border-radius: 10px;
+  box-shadow: 5px 10px 3px 3px lightgrey;
 }
 
 /* HERDER */
@@ -62,6 +63,19 @@ img.share-icon {
 
   border-radius: 50%;
   justify-self: center;
+
+  background: url("assets/image/profile-picture.jpg") no-repeat;
+  display: inline-block;
+  background-size: cover;
+  transition: 0.3s;
+}
+.profile-picture:hover {
+  background: url("assets/image/profile-picture2.jpg") no-repeat;
+  display: inline-block;
+  background-size: cover;
+}
+
+.profile-picture:hover {
 }
 
 .info h2 {
