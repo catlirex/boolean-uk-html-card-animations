@@ -15,12 +15,12 @@ body {
 
 .card {
   width: 300px;
-  background: rgb(2, 0, 36);
+  background: rgba(0, 212, 255, 1);
   background: linear-gradient(
     22deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(16, 16, 84, 1) 36%,
-    rgba(0, 212, 255, 1) 100%
+    rgb(143, 222, 238) 0%,
+    rgb(107, 107, 214) 100%,
+    rgba(2, 0, 36, 1) 100%
   );
   display: grid;
   grid-template-rows: 50px 270px 200px;
@@ -61,7 +61,7 @@ img.share-icon:hover {
 
 .info {
   display: grid;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   justify-items: center;
   grid-template-rows: 120px 40px 30px 30px 50px;
 }
@@ -95,18 +95,18 @@ img.share-icon:hover {
 
 .hire-me-button {
   text-decoration: none;
-  color: white;
+  color: black;
   width: 150px;
   display: grid;
   justify-content: center;
   align-items: center;
 
-  background: rgb(81, 75, 196);
+  background: rgb(148, 145, 218);
   background: linear-gradient(
     103deg,
-    rgba(81, 75, 196, 1) 0%,
-    rgba(23, 113, 116, 1) 10%,
-    rgba(18, 247, 212, 1) 100%
+    rgb(181, 178, 235) 0%,
+    rgb(97, 78, 163) 80%,
+    rgb(76, 22, 146) 100%
   );
 
   border-top-left-radius: 50px;
@@ -177,7 +177,7 @@ img.share-icon:hover {
   display: grid;
   align-items: center;
   justify-items: center;
-  color: white;
+  color: rgb(70, 70, 70);
   grid-template-rows: 80px 30px 30px;
 }
 
@@ -188,9 +188,9 @@ img.share-icon:hover {
   background: rgb(81, 75, 196);
   background: linear-gradient(
     45deg,
-    rgba(81, 75, 196, 1) 0%,
+    rgb(25, 22, 68) 0%,
     rgba(57, 80, 150, 1) 0%,
-    rgba(17, 186, 151, 0.7301295518207283) 100%
+    rgba(62, 151, 163, 0.73) 100%
   );
 
   border-radius: 50%;
@@ -203,11 +203,13 @@ img.share-icon:hover {
   height: 30px;
   justify-items: center;
   transition: 0.1s;
+  filter: invert(99%) sepia(6%) saturate(2%) hue-rotate(204deg) brightness(112%)
+    contrast(100%);
 }
 
 .icon-container:hover .social-icon {
-  filter: invert(51%) sepia(26%) saturate(7445%) hue-rotate(163deg)
-    brightness(97%) contrast(101%);
+  filter: invert(99%) sepia(71%) saturate(1704%) hue-rotate(334deg)
+    brightness(113%) contrast(101%);
 
   transform: scale(1.2);
 }
